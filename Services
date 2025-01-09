@@ -1,0 +1,23 @@
+import ServicesList from "../components/ServicesList";
+import PricingPackages from "../components/PricingPackages";
+import ProcessTimeline from "../components/ProcessTimeline";
+import CallToAction from "../components/CallToAction";
+
+const Services = () => {
+  return (
+    <div>
+      <section className="py-20 bg-gradient-to-r from-purple-700 to-indigo-800 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+          <p className="text-xl max-w-2xl mx-auto">Comprehensive digital marketing solutions to help your business thrive online.</p>
+        </div>
+      </section>
+      <ServicesList />
+      <PricingPackages />
+      <ProcessTimeline />
+      <CallToAction />
+    </div>
+  );
+};
+
+export default Services;
